@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Nice defaults */
+html, body { height: 100%; }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography polish for chat */
+.prose {
+  --tw-prose-bullets: theme(colors.slate.400);
+  --tw-prose-links: theme(colors.brand.600);
+}
+
+/* Chat bubble refinements */
+.chat-bubble {
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(2,8,23,0.06);
+}
+.chat-bubble--user {
+  background: theme(colors.brand.600);
+  color: white;
+}
+.chat-bubble--assistant {
+  background: white;
+  border: 1px solid theme(colors.surface.ring);
+}

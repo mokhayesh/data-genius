@@ -1,0 +1,28 @@
+// ===================== file: app/data-genius/styles.css =====================
+/* Lightweight styling; adjust to your design system */
+:root { --bg:#0e1014; --card:#141824; --muted:#9aa4b2; --accent:#6d5ef6; --danger:#e24a4a; }
+*{box-sizing:border-box}
+body{background:var(--bg);}
+.dg-wrap{max-width:1200px;margin:40px auto;padding:0 16px;color:#fff;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto}
+.dg-row{display:flex;gap:12px;flex-wrap:wrap}
+.dg-card{background:var(--card);border-radius:16px;padding:16px}
+.dg-title{font-size:28px;font-weight:700;display:flex;align-items:center;gap:10px}
+.dg-sub{color:var(--muted);font-size:14px}
+.dg-btn{background:var(--accent);border:none;color:#fff;padding:10px 16px;border-radius:999px;cursor:pointer}
+.dg-btn:hover{opacity:.9}
+.dg-btn.secondary{background:#2a3042}
+.dg-btn.danger{background:var(--danger)}
+.dg-input, .dg-select, .dg-textarea{background:#0b0f17;border:1px solid #32374a;color:#fff;border-radius:12px;padding:10px}
+.dg-input:focus,.dg-select:focus,.dg-textarea:focus{outline:2px solid #4b58ff}
+.dg-grid{display:grid;gap:12px}
+.dg-grid.cols-2{grid-template-columns:1fr 1fr}
+.dg-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#272c3d;color:#cbd5e1;font-size:12px}
+.dg-table{width:100%;border-collapse:collapse}
+.dg-table th,.dg-table td{border-bottom:1px solid #2b3145;padding:8px;text-align:left}
+.dg-scroll{max-height:360px;overflow:auto}
+.dg-footer{display:flex;gap:8px;align-items:center}
+.dg-muted{color:#a8b1c1}
+.dg-chip{padding:2px 8px;border-radius:999px;background:#22283a;font-size:12px}
+.dg-kbd{border:1px solid #364567;border-radius:6px;padding:0 6px;background:#101522;font-size:12px}
+.dg-link{color:#9aaefc;text-decoration:none}
+.dg-link:hover{text-decoration:underline}
